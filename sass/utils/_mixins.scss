@@ -1,0 +1,25 @@
+@mixin list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin reset {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin clearfix {
+    &:after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+}
+
+@mixin transition($property) {
+    -webkit-transition: $property;
+    -moz-transition: $property;
+    -o-transition: $property;
+    transition: $property;
+}
