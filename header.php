@@ -24,7 +24,7 @@
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'mytheme'); ?></a>
 
-    <header id="masthead" class="site-header">
+    <header id="masthead" class="site-header" style="background: url('<?php echo get_header_image() ?>') no-repeat center top / cover">
         <div class="header-wrapper">
             <div class="container">
                 <div class="header-container">
