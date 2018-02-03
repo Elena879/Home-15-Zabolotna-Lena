@@ -18,8 +18,8 @@
         <?php wp_nav_menu(array(
             'menu' => 'Footer Menu',
             'container' => 'ul',
-            'container_class' => 'footer-list',
-            'menu_class' => 'footer-list',
+            'container_class' => 'footer-menu',
+            'menu_class' => 'footer-menu',
         )); ?>
     </div>
 

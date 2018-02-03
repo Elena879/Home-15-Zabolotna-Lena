@@ -166,3 +166,46 @@ function enqueue_our_required_stylesheets(){
 	wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/font-awesome/css/font-awesome.css');
 }
 add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
+
+function border_head_styles() {
+	$border_color = get_theme_mod( 'border_color_set', '#2ecc71' );
+	if ( $border_color != '#2ecc71' ) :
+		?>
+		<style type="text/css">
+			.site-header:before {
+				background: <?php echo $border_color; ?>;
+			}
+		</style>
+		<?php
+	endif;
+}
+add_action( 'wp_head', 'border_head_styles' );
+
+function footer_styles() {
+    $bg_color = get_theme_mod( 'footer_bg_color', '#e3e3e3' );
+	if ( $bg_color != '#e3e3e3' ) :
+        ?>
+        <style type="text/css">
+            .site-footer {
+                background-color: <?php echo $bg_color ?>;
+            }
+        </style>
+        <?php
+    endif;
+}
+add_action( 'wp_footer', 'footer_styles' );
+function get_notified_styles() {
+	$get_notified_bg_color = get_theme_mod( 'get_notified_bg_color', '#e3e3e3' );
+	if ( $get_notified_bg_color != '#e3e3e3' ) :
+		?>
+		<style type="text/css">
+			.get-notified {
+				background-color: <?php echo $get_notified_bg_color ?>;
+			}
+		</style>
+		<?php
+	endif;
+}
+add_action( 'wp_head', 'get_notified_styles' );
+
+

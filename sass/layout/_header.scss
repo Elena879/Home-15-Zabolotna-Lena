@@ -5,64 +5,25 @@
         background: $secondary-color;
         height: 10px;
     }
-    .header-wrapper {
+    .header-container {
         padding: 167px 0 176px 0;
-        .header-container {
-            max-width: 1020px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 0;
-            .hand-picture {
-                position: absolute;
-                right: 0;
-                bottom: -202px;
-                max-width: 433px;
-                z-index: -1;
-            }
-            .site-description {
-                max-width: 453px;
-                color: $white;
-                font: 500 24px/36px $main-font;
-                @include reset;
-                margin: 36px 0 26px 0;
-            }
-            .header-links {
-                @include clearfix;
-                li {
-                    margin-right: 9px;
-                    a {
-                        background-color: $black;
-                        border-radius: 50%;
-                        opacity: 0.5;
-                        height: 54px;
-                        width: 54px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        outline: none;
-                        &:hover {
-                            background-color: $secondary-color;
-                            opacity: 1;
-                            @include transition(0.3s);
-                        }
-                        &:before {
-                            font: 400 26px/1 $icon-font;
-                            color: $icon-color;
-                        }
-                    }
-                    &:nth-child(1) a:before {
-                        content: "\f179";
-                    }
-
-                    &:nth-child(2) a:before {
-                        content: "\f17b";
-                    }
-
-                    &:nth-child(3) a:before {
-                        content: "\f17a";
-                    }
-                }
-            }
+        max-width: 1020px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 0;
+        .hand-picture {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            max-width: 433px;
+            z-index: -1;
+        }
+        .site-description {
+            max-width: 453px;
+            color: $white-color;
+            font: 500 24px/36px $main-font;
+            @include reset;
+            margin: 36px 0 26px 0;
         }
     }
 }

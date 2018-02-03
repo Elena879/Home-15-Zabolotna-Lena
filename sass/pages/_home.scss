@@ -1,0 +1,26 @@
+.get-notified {
+    padding: 60px 0;
+    background-color: $primary-bg-color;
+    &-block {
+        display: flex;
+        justify-content: space-between;
+        .main-get-notified {
+            h2 {
+                margin: 0;
+                color: $heading-color;
+                font: 600 22px/1 $secondary-font;
+            }
+            p {
+                margin: 25px 0 30px 0;
+                color: $main-color;
+                font: 400 16px/26px $main-font;
+                max-width: 533px;
+            }
+        }
+        iframe {
+            width: 500px;
+            height: 307px;
+            border: none;
+        }
+    }
+}

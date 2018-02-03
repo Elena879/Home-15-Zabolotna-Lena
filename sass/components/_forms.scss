@@ -1,0 +1,37 @@
+.get-notified-form {
+    display: flex;
+    @include placeholder {
+        color: $main-color;
+        font: 400 18px $main-font;
+    }
+    input {
+        width: 100%;
+        @include appearance(none);
+        &:focus {
+            outline: none;
+        }
+    }
+    .email {
+        padding: 22px 5px 20px 26px;
+        max-width: 305px;
+        border: 1px solid #c8c8c8;
+        border-right: none;
+        background-color: $white-color;
+        color: $main-color;
+        font: 400 18px $main-font;
+        border-radius: 10px 0 0 10px;
+    }
+    .submit {
+        padding: 19px 40px 20px 38px;
+        max-width: 140px;
+        background-color: $secondary-color;
+        color: $white-color;
+        font: 700 22px $secondary-font;
+        border-radius: 0 10px 10px 0;
+        border: none;
+        &:hover {
+            opacity: 0.8;
+            @include transition(0.2s);
+        }
+    }
+}
