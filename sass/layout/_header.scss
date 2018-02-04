@@ -25,6 +25,32 @@
             @include reset;
             margin: 36px 0 26px 0;
         }
+        .header-menu {
+            @include clearfix;
+            li {
+                margin-right: 9px;
+                a {
+                    background-color: $black-color;
+                    border-radius: 50%;
+                    opacity: 0.5;
+                    height: 54px;
+                    width: 54px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    outline: none;
+                    i {
+                        font: 400 26px/1 $icon-font;
+                        color: $icon-color;
+                    }
+                    &:hover {
+                        background-color: $secondary-color;
+                        opacity: 1;
+                        @include transition(0.3s);
+                    }
+                }
+            }
+        }
     }
 }
 
